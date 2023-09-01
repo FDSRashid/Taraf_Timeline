@@ -38,9 +38,9 @@ def plot_timeline(citi = ['المدينه', 'بغداد', 'كوفة', 'بصرة'
   return fig
 
 app = gradio.Interface(plot_timeline,
-             [gradio.Dropdown(choices = cities, value = ['المدينه', 'بغداد', 'كوفة', 'بصرة'], multiselect=True, scale = 1),
-                        gradio.Slider(min_year, max_year, value = 0, label = 'Begining', info = 'Choose the first year to display Tarafs', scale = 1),
-                        gradio.Slider(min_year, max_year, value = 400, label = 'End', info = 'Choose the last year to display Tarafs', scale = 1)
+             [gradio.Dropdown(choices = cities, value = ['المدينه', 'بغداد', 'كوفة', 'بصرة'], multiselect=True),
+                        gradio.Slider(min_year, max_year, value = 0, label = 'Begining', info = 'Choose the first year to display Tarafs'),
+                        gradio.Slider(min_year, max_year, value = 400, label = 'End', info = 'Choose the last year to display Tarafs')
 
                         ],
-                       gradio.Plot(scale = 3)).launch()
+                       gradio.Plot()).launch()
