@@ -9,14 +9,14 @@ Original file is located at
 
 import numpy as np
 import gradio
-
+import os
 import pandas as pd
 from datasets import load_dataset
 
 
 import plotly.express as px
-
-dataset = load_dataset("FDSRashid/taraf_by_year")
+Secret_token = os.getenv('hadith_app1')
+dataset = load_dataset("FDSRashid/taraf_by_year", use_auth_token = Secret_token)
 taraf_s = dataset.to_pandas()
 
 
