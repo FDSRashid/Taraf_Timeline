@@ -11,14 +11,14 @@ import numpy as np
 import gradio
 
 import pandas as pd
-
+from datasets import load_dataset
 
 
 import plotly.express as px
 
+dataset = load_dataset("FDSRashid/taraf_by_year")
+taraf_s = dataset.to_pandas()
 
-
-taraf_s = pd.read_csv('FDSRashid/taraf_by_year/taraf_by_year.csv')
 
 taraf_s = taraf_s.sort_values(['City', 'Year'], ascending=True)
 
