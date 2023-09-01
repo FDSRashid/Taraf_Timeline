@@ -9,7 +9,7 @@ Original file is located at
 
 import numpy as np
 import gradio
-import plotly.express as px
+
 import pandas as pd
 
 
@@ -18,7 +18,7 @@ import plotly.graph_objects as go
 
 
 
-taraf_s = pd.read_csv('/content/drive/MyDrive/Hadith Project/taraf_by_year.csv')
+taraf_s = pd.read_csv('HadithML/taraf_by_year.csv')
 
 taraf_s = taraf_s.sort_values(['City', 'Year'], ascending=True)
 
