@@ -16,7 +16,7 @@ from datasets import load_dataset
 
 import plotly.express as px
 Secret_token = os.getenv('token')
-dataset = load_dataset("FDSRashid/taraf_by_year", token = Secret_token)
+dataset = load_dataset("FDSRashid/taraf_by_year", token = Secret_token,split="train")
 taraf_s = dataset.to_pandas()
 
 
