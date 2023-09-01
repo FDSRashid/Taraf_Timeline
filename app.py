@@ -8,11 +8,11 @@ Original file is located at
 """
 
 import numpy as np
-
+import gradio
 import plotly.express as px
 import pandas as pd
 
-import gradio
+
 
 import plotly.graph_objects as go
 
