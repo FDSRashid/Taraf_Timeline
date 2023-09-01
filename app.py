@@ -14,11 +14,11 @@ import pandas as pd
 
 
 
-import plotly.graph_objects as go
+import plotly.express as px
 
 
 
-taraf_s = pd.read_csv('HadithML/taraf_by_year.csv')
+taraf_s = pd.read_csv('FDSRashid/HadithML/taraf_by_year.csv')
 
 taraf_s = taraf_s.sort_values(['City', 'Year'], ascending=True)
 
