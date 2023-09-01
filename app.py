@@ -43,4 +43,4 @@ app = gradio.Interface(plot_timeline,
                         gradio.Slider(min_year, max_year, value = 400, label = 'End', info = 'Choose the last year to display Tarafs')
 
                         ],
-                       gradio.Plot()).launch()
+                       gradio.Plot(min_width = 300)).launch()
